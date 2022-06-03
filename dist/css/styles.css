@@ -1,0 +1,38 @@
+html {
+  font-size: 100%;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: hsl(227deg, 12%, 61%);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --pry-text: hsl(227, 12%, 61%);
+  --sec-text: hsl(228, 39%, 23%);
+  --dark-text: hsl(233, 12%, 13%);
+  --light-text: hsl(0, 0%, 98%);
+  --bright-red: hsl(12, 88%, 59%);
+  --pale-red:hsl(13, 100%, 96%);
+}/*# sourceMappingURL=styles.css.map */
