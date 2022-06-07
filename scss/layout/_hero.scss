@@ -1,0 +1,41 @@
+@use '../utils';
+
+.hero {
+  //   background-image: url('../../images/bg-tablet-pattern.svg');
+  //   background-repeat: no-repeat;
+  //   background-position: right 100% top 100%;
+
+  header {
+  border: 1px solid teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: utils.$min-space;
+  // padding-bottom: 0;
+}
+  &__img {
+    width: 80%;
+    margin-inline: auto;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      // position: relative;
+      // bottom:  -3rem;
+    }
+  }
+  &__content {
+    padding: utils.$min-space 0;
+  }
+  &__text {
+    text-align: center;
+    padding: utils.$min-space;
+  }
+  &__btn {
+    text-align: center;
+    button {
+      @include utils.button(var(--light-color), var(--bright-color));
+    }
+  }
+}
+

@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -33,20 +33,183 @@
     </style>
   </head>
   <body>
-    Pricing Product About Us Careers Community Get Started Bring everyone
-    together to build better products. Manage makes it simple for software teams
-    to plan day-to-day tasks while keeping the larger team goals in view. Get
-    Started What’s different about Manage? Manage provides all the functionality
-    your team needs, without the complexity. Our software is tailor-made for
-    modern digital product teams. 01 Track company-wide progress See how your
-    day-to-day tasks fit into the wider vision. Go from tracking progress at the
-    milestone level all the way done to the smallest of details. Never lose
-    sight of the bigger picture again. 02 Advanced built-in reports Set internal
-    delivery estimates and track progress toward company goals. Our customisable
-    dashboard helps you build out the reports you need to keep key stakeholders
-    informed. 03 Everything you need in one place Stop jumping from one service
-    to another to communicate, store files, track tasks and share documents.
-    Manage offers an all-in-one team productivity solution. What they’ve said
+    <div class="modal hidden"></div>
+    <section class="hero">
+      <header>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo" class="logo__img" />
+        </div>
+        <nav class="nav">
+          <div class="nav__btns">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="open nav"
+              class="nav__btns--open"
+            />
+            <img
+              src="./images/icon-close.svg"
+              alt="close nav"
+              class="nav__btns--close hidden"
+            />
+          </div>
+          <ul class="nav__links hidden">
+            <li>Pricing</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+          <button>get started</button>
+        </nav>
+      </header>
+      <section class="hero__content">
+        <div class="hero__img">
+          <img src="./images/illustration-intro.svg" alt="illustration" />
+        </div>
+        <div class="hero__text">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+        </div>
+        <div class="hero__btn">
+          <button>get started</button>
+        </div>
+      </section>
+      <section class="section-diff">
+        <article>
+          <h2>What’s different about Manage?</h2>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </article>
+        <article>
+          <div class="section-diff__item">
+            <div class="section-diff__item-title">
+              <h3>
+                <span>01</span>
+                Track company-wide progress
+              </h3>
+            </div>
+            <div class="section-diff__item-text">
+              <div class="empty"></div>
+              <p>
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+          </div>
+          <div class="section-diff__item">
+            <div class="section-diff__item-title">
+              <h3>
+                <span>02</span>
+                Advanced built-in reports
+              </h3>
+            </div>
+            <div class="section-diff__item-text">
+              <div class="empty"></div>
+
+              <p>
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+          </div>
+          <div class="section-diff__item">
+            <div class="section-diff__item-title">
+              <h3>
+                <span>03</span>
+                Everything you need in one place
+              </h3>
+            </div>
+            <div class="section-diff__item-text">
+              <div class="empty"></div>
+              <p>
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__title">What they’ve said</h2>
+      <article class="reviews__card">
+        <div class="reviews__img-container">
+          <img src="./images/avatar-anisha.png" alt="customer" />
+        </div>
+        <h3>Ali Pravo</h3>
+        <p>
+          “Manage has supercharged our team’s workflow. The ability to maintain
+          visibility on larger milestones at all times keeps everyone
+          motivated.”
+        </p>
+      </article>
+      <ul class="reviews__dots">
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+      </ul>
+      <div class="reviews__btn">
+        <button>get started</button>
+      </div>
+    </section>
+    <section class="simplify">
+      <div class="simplify__tilte">
+        <h1>Simplify how your team works today.</h1>
+      </div>
+      <div class="simplify__title">
+        <button>Get Started</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__subscribe">
+        <input type="text" placeholder="Updates in your inbox..." />
+        <button>GO</button>
+      </div>
+      <ul class="footer__services">
+        <div>
+          <li>Home</li>
+          <li>Pricing</li>
+          <li>Products</li>
+          <li>About Us</li>
+        </div>
+        <div>
+          <li>Careers</li>
+          <li>Community</li>
+          <li>Privacy Policy</li>
+        </div>
+      </ul>
+      <ul class="footer__socials">
+        <li>
+          <img src="./images/icon-facebook.svg" alt="facebook" />
+        </li>
+        <li><img src="./images/icon-youtube.svg" alt="youtube" /></li>
+        <li>
+          <img src="./images/icon-twitter.svg" alt="twitter" />
+        </li>
+        <li>
+          <img src="./images/icon-pinterest.svg" alt="pinterest" />
+        </li>
+        <li>
+          <img src="./images/icon-instagram.svg" alt="instagram" />
+        </li>
+      </ul>
+      <div class="footer__logo">
+        <div><img src="./images/logo.svg" alt="" /></div>
+      </div>
+    </footer>
+  
+    <!--    
     Anisha Li “Manage has supercharged our team’s workflow. The ability to
     maintain visibility on larger milestones at all times keeps everyone
     motivated.” Ali Bravo “We have been able to cancel so many other
@@ -58,7 +221,7 @@
     keeps the whole team in-sync without being intrusive.” Get Started Simplify
     how your team works today. Get Started Home Pricing Products About Us
     Careers Community Privacy Policy Updates in your inbox… Go Copyright 2020.
-    All Rights Reserved
+    All Rights Reserved -->
 
     <div class="attribution">
       Challenge by
@@ -67,4 +230,5 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>

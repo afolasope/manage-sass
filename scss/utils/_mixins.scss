@@ -1,0 +1,15 @@
+@mixin button ($color, $bg-color) {
+    border: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    color: $color;
+    background-color: $bg-color;
+}
+
+@mixin image-block {
+    height: 100%;
+    width: 100%;
+    display: block;
+}

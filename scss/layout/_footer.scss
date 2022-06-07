@@ -1,0 +1,52 @@
+@use '../utils';
+
+.footer {
+  color: var(--light-color);
+  padding: utils.$min-space;
+  background-color: var(--dark-color);
+
+  &__subscribe {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    input {
+      font-size: inherit;
+      font-family: inherit;
+      padding: 0.5rem 2rem;
+      border: none;
+      border-radius: utils.$border-radius;
+      width: 65%;
+    }
+
+    button {
+      text-align: center;
+      @include utils.button(var(--light-color), var(--bright-color));
+      width: 25%;
+    }
+  }
+
+  &__services {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 2rem;
+
+    li {
+      font-weight: 300;
+      line-height: 1.8;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  &__logo {
+    text-align: center;
+  }
+}

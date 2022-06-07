@@ -1,0 +1,44 @@
+@use '../utils';
+
+.section-diff {
+  padding: utils.$min-space;
+
+  article:first-of-type {
+    margin-bottom: 3rem;
+  }
+  &__item {
+    // display: flex;
+    margin-bottom: 3rem;
+
+    &-title {
+      span {
+        background-color: var(--bright-color);
+        padding: 0.5rem 1.5rem;
+        display: inline-block;
+        border-radius: utils.$border-radius;
+      }
+      h3 {
+        border-radius: utils.$border-radius;
+        background-color: var(--pale-color);
+        span:first-of-type {
+          margin-right: 2%;
+        }
+      }
+    }
+
+    &-text {
+      display: flex;
+      @media (min-width: 600px) {
+        .empty {
+          width: 10%;
+          height: 100%;
+          background-color: aquamarine;
+        }
+      }
+
+      p {
+        flex-basis: 90%;
+      }
+    }
+  }
+}

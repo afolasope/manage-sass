@@ -1,0 +1,65 @@
+@use '../utils';
+
+.reviews {
+  padding: utils.$min-space;
+  text-align: center;
+  &__title {
+    margin-bottom: 6rem;
+  }
+  &__card {
+    position: relative;
+    background-color: var(--light-color);
+    padding: 4rem 2rem;
+    padding-top: 5rem;
+    // margin-top: 4rem;
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+  &__img-container {
+    height: 5rem;
+    width: 5rem;
+    margin: auto;
+    position: absolute;
+    top: -14%;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      @include utils.image-block;
+    }
+  }
+  &__dots {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 20%;
+    margin: 1.5rem auto;
+
+    .dot {
+      height: 0.5rem;
+      width: 0.5rem;
+      border-radius: 50%;
+      border: 1px solid var(--bright-color);
+    }
+  }
+
+  button {
+    margin-top: 2rem;
+    @include utils.button(var(--light-color), var(--bright-color));
+  }
+}
+
+.simplify {
+  background-color: var(--bright-color);
+  padding: 4rem utils.$min-space;
+  text-align: center;
+
+  h1{
+    color: var(--light-color);
+       
+  }
+  button{
+      @include utils.button( var(--bright-color), var(--light-color));
+  }
+  
+}
