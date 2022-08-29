@@ -2,10 +2,20 @@
 .hero header {
   position: relative;
 }
+@include utils.breakpoint(x-large) {
+}
 .nav {
   display: flex;
-  &__btns{
-      z-index: 3;
+  @include utils.breakpoint(x-large) {
+    // border: 1px solid firebrick;
+    align-items: center;
+    width: 80%;
+  }
+  &__btns {
+    z-index: 3;
+    @include utils.breakpoint(x-large) {
+      display: none;
+    }
   }
   &__links {
     position: absolute;
@@ -14,27 +24,58 @@
     top: 6rem;
     width: 80%;
     margin: auto;
-    transform: translateX(-13%);
     list-style-type: none;
     z-index: 3;
     padding: 2rem;
     text-align: center;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     font-weight: 500;
+    transform: translate(-13%, -150%);
+    transition: transform 0.5s ease-out;
+    // opacity: 0;
 
-    li{
-        line-height: 2;
-        color: var(--dark-color);
-        
-        &:not(:last-of-type){
-            margin-bottom: 1rem
+    li {
+      line-height: 2;
+      color: var(--dark-color);
+
+      &:not(:last-of-type) {
+        margin-bottom: 1rem;
+        @include utils.breakpoint(x-large) {
+          margin-bottom: 0;
         }
+      }
+    }
+    @include utils.breakpoint(x-large) {
+      // border: 1px solid firebrick;
+      position: static;
+      transform: translate(0%, 0%);
+      background-color: transparent;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 300;
+        margin-right: 2rem;
+      }
+      // li + li {
+      // }
     }
   }
+
+  .show-nav {
+    transform: translate(-13%, 0%);
+    padding: 5rem;
+  }
+  //   .hide-nav {
+  //     transform: translate(-13%, -150%);
+  //   }
 
   button {
     @include utils.button(var(--light-color), var(--bright-color));
     display: none;
+    @include utils.breakpoint(x-large) {
+      display: block;
+    }
   }
 }
 
