@@ -1,38 +1,90 @@
 @use '../utils';
 
+@include utils.breakpoint(x-large) {
+}
 .section-diff {
+  border: 1px solid red;
   padding: utils.$min-space;
+  @include utils.breakpoint(medium) {
+    padding: utils.$med-space;
+  }
+  @include utils.breakpoint(x-large) {
+    padding: utils.$max-space;
+    display: flex;
+    gap: 3rem;
+  }
 
   article:first-of-type {
     margin-bottom: 3rem;
+
+    h2 {
+      text-align: center;
+    }
+    @include utils.breakpoint(x-large) {
+      h2 {
+        text-align: start;
+      }
+      p {
+        max-width: 80%;
+      }
+    }
   }
   &__item {
-    // display: flex;
     margin-bottom: 3rem;
 
     &-title {
-      span {
+      border: 1px solid aqua;
+      span:first-of-type {
+        border: 1px solid aqua;
+
         background-color: var(--bright-color);
         padding: 0.5rem 1.5rem;
         display: inline-block;
         border-radius: utils.$border-radius;
+        border: 1px solid royalblue;
+      }
+      span:last-of-type {
+        border: 1px solid royalblue;
+        display: inline-block;
       }
       h3 {
+        border: 1px solid royalblue;
         border-radius: utils.$border-radius;
         background-color: var(--pale-color);
         span:first-of-type {
           margin-right: 2%;
+          @include utils.breakpoint(x-large) {
+            margin-right: 8.5%;
+          }
+        }
+      }
+      @include utils.breakpoint(x-large) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h3 {
+          width: 100%;
+        }
+
+        span:last-of-type {
+          min-width: 70%;
         }
       }
     }
 
     &-text {
       display: flex;
-      @media (min-width: 600px) {
+      border: 1px solid aqua;
+
+      @include utils.breakpoint(x-large) {
         .empty {
-          width: 10%;
+          width: 20%;
           height: 100%;
-          background-color: aquamarine;
+        }
+        p {
+          width: 80%;
+          margin-left: 3%;
+          border: 1px solid aqua;
         }
       }
 

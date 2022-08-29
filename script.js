@@ -9,12 +9,15 @@ console.log(navBtns, navOpen, navClose);
 navBtns.addEventListener('click', function (e) {
   const elem = e.target;
   if (elem.classList.contains('nav__btns--open')) {
+    nav.classList.add('show-nav');
+
     navOpen.classList.add('hidden');
     navClose.classList.remove('hidden');
     nav.classList.remove('hidden');
     modal.classList.remove('hidden');
-  }
-  if (elem.classList.contains('nav__btns--close')) {
+  } else if (elem.classList.contains('nav__btns--close')) {
+    nav.classList.remove('show-nav');
+
     navClose.classList.add('hidden');
     navOpen.classList.remove('hidden');
     nav.classList.add('hidden');
